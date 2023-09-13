@@ -1,9 +1,44 @@
 <template>
   <div>
-    <v-btn color="success">text</v-btn>
+    <h1>Produtos em alta</h1>
+    <v-container>
+      <v-row>
+        <v-col
+          cols="12"
+          md="6"
+          lg="4"
+          v-for="(item, index) in items"
+          :key="index"
+        >
+          <CardProduct :item="item" />
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
-<script>
-export default {};
+<script setup>
+const items = ref([
+  {
+    name: "HeadBass XLG",
+    price: 99.99,
+    description: "A beautiful headphone prepare to enjoy your mind!",
+    stars: 2,
+    count: 10,
+  },
+  {
+    name: "HeadBass XLG",
+    price: 99.99,
+    description: "A beautiful headphone prepare to enjoy your mind!",
+    stars: 4,
+    count: 5,
+  },
+  {
+    name: "HeadBass XLG",
+    price: 99.99,
+    description: "A beautiful headphone prepare to enjoy your mind!",
+    stars: 5,
+    count: 210,
+  },
+]);
 </script>
 <style lang="scss" scoped></style>
