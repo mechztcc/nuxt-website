@@ -1,8 +1,6 @@
 <template>
   <div class="d-flex justify-space-between pa-3">
-    <div class="d-flex align-center">
-      <h1>Loja Legal</h1>
-    </div>
+    <div class="d-flex"></div>
     <div class="d-flex align-center">
       <v-icon>mdi-theme-light-dark</v-icon>
       <v-btn color="primary mx-2">

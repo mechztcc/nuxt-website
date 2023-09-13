@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Produtos em alta</h1>
     <v-container>
+      <h1 class="mb-10">Produtos em alta</h1>
       <v-row>
         <v-col
           cols="12"
