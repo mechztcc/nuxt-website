@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card>
+    <v-card elevation="1">
       <img class="img-size" src="~assets/phone.jpg" alt="" />
       <div class="d-flex">
         <v-card-title primary-title> {{ item.name }} </v-card-title>
@@ -16,7 +16,7 @@
       </v-card-text>
       <v-card-text> {{ item.description }} </v-card-text>
       <v-card-actions>
-        <v-btn block color="primary" dark>Comprar</v-btn>
+        <v-btn block color="primary" dark>Adicionar ao carrinho</v-btn>
       </v-card-actions>
     </v-card>
   </div>

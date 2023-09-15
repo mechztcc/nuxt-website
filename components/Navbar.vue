@@ -1,16 +1,14 @@
 <template>
-  <div class="d-flex justify-space-between pa-3">
+  <div class="d-flex justify-space-between pa-3 bg-primary elevation-5">
     <div class="d-flex"></div>
     <div class="d-flex align-center">
       <v-icon @click="toggleTheme">mdi-theme-light-dark</v-icon>
-      <v-btn color="primary mx-2">
-        Favoritos
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-      <v-btn color="primary">
-        Carrinho
-        <v-icon size="large">mdi-cart</v-icon>
-      </v-btn>
+      <v-badge color="secondary" content="0" class="mx-3">
+        <v-icon icon="mdi-heart" size="x-large"></v-icon>
+      </v-badge>
+      <v-badge color="secondary" content="5">
+        <v-icon icon="mdi-cart" size="x-large"></v-icon>
+      </v-badge>
     </div>
   </div>
 </template>
@@ -20,7 +18,6 @@ import { useTheme } from "vuetify";
 const theme = useTheme();
 
 function toggleTheme() {
-  console.log("change theme");
   theme.global.name.value = theme.global.current.value.dark ? "light" : "dark";
 }
 </script>

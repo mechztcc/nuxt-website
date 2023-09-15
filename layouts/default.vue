@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="global-wrapper">
     <Navbar />
     <NuxtPage>
       <slot />
@@ -7,3 +7,10 @@
     <TemplateFooter />
   </div>
 </template>
+
+<style lang="scss">
+.global-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+</style>

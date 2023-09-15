@@ -20,21 +20,21 @@
 const items = ref([
   {
     name: "HeadBass XLG",
-    price: 99.99,
+    price: 79.99,
     description: "A beautiful headphone prepare to enjoy your mind!",
     stars: 2,
     count: 10,
   },
   {
     name: "HeadBass XLG",
-    price: 99.99,
+    price: 199.99,
     description: "A beautiful headphone prepare to enjoy your mind!",
     stars: 4,
     count: 5,
   },
   {
     name: "HeadBass XLG",
-    price: 99.99,
+    price: 299.99,
     description: "A beautiful headphone prepare to enjoy your mind!",
     stars: 5,
     count: 210,
