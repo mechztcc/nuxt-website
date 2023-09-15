@@ -11,7 +11,6 @@ export default {};
 </script>
 <style lang="scss" scoped>
 .d-flex {
-  position: absolute;
   bottom: -10%;
   right: 0;
   left: 0;

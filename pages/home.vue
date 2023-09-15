@@ -17,8 +17,11 @@
   </div>
 </template>
 <script setup>
-const items = ref([
+import { useAlertsStore } from "~/stores/CartStore";
+
+const items = [
   {
+    id: 1,
     name: "HeadBass XLG",
     price: 79.99,
     description: "A beautiful headphone prepare to enjoy your mind!",
@@ -26,6 +29,7 @@ const items = ref([
     count: 10,
   },
   {
+    id: 2,
     name: "HeadBass XLG",
     price: 199.99,
     description: "A beautiful headphone prepare to enjoy your mind!",
@@ -33,12 +37,13 @@ const items = ref([
     count: 5,
   },
   {
+    id: 3,
     name: "HeadBass XLG",
     price: 299.99,
     description: "A beautiful headphone prepare to enjoy your mind!",
     stars: 5,
     count: 210,
   },
-]);
+];
 </script>
 <style lang="scss" scoped></style>

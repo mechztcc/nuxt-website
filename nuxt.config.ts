@@ -16,10 +16,15 @@ const light = {
 
 export default defineNuxtConfig({
   modules: ["@invictus.codes/nuxt-vuetify", "@pinia/nuxt"],
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      "defineStore", // import { defineStore } from 'pinia'
+      ["defineStore", "definePiniaStore"], // import { defineStore as definePiniaStore } from 'pinia'
+    ],
+  },
   vuetify: {
-    /* vuetify options */
     vuetifyOptions: {
-      // @TODO: list all vuetify options
       theme: {
         defaultTheme: "dark",
         themes: {
@@ -29,11 +34,8 @@ export default defineNuxtConfig({
     },
 
     moduleOptions: {
-      /* nuxt-vuetify module options */
       treeshaking: true,
       useIconCDN: true,
-
-      /* vite-plugin-vuetify options */
       styles: true,
       autoImport: true,
       useVuetifyLabs: true,

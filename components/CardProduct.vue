@@ -16,15 +16,22 @@
       </v-card-text>
       <v-card-text> {{ item.description }} </v-card-text>
       <v-card-actions>
-        <v-btn block color="primary" dark>Adicionar ao carrinho</v-btn>
+        <v-btn block color="primary" dark @click="store.addItem(item)"
+          >Adicionar ao carrinho</v-btn
+        >
       </v-card-actions>
     </v-card>
   </div>
 </template>
 <script setup>
+import { useAlertsStore } from "~/stores/CartStore";
+
 const props = defineProps(["item"]);
+
+const store = useAlertsStore();
+
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .img-size {
   object-fit: cover;
   min-width: 300px;

@@ -4,8 +4,8 @@
     <NuxtPage>
       <slot />
     </NuxtPage>
-    <TemplateFooter />
   </div>
+  <TemplateFooter />
 </template>
 
 <style lang="scss">
