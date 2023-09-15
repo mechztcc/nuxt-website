@@ -15,7 +15,12 @@ const light = {
 };
 
 export default defineNuxtConfig({
-  modules: ["@invictus.codes/nuxt-vuetify", "@pinia/nuxt"],
+  modules: ["@invictus.codes/nuxt-vuetify", "@pinia/nuxt", "@nuxtjs/i18n"],
+  i18n: {
+    locales: ["en", "fr", "es"],
+    defaultLocale: "en",
+    vueI18n: './i18n.options.ts',
+  },
   pinia: {
     autoImports: [
       // automatically imports `defineStore`
